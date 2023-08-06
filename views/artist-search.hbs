@@ -1,0 +1,17 @@
+<div>
+  <a href="/">Home</a>
+
+    <h3>Aquí resultados de la búsqueda</h3>
+    <div>
+<div>
+  <h3>Resultados de búsqueda</h3>
+  <ul>
+    {{#each this.data.artists.items}}
+    <li>{{this.name}}</li>
+    <img src="{{this.images.[0].url}}" alt="">
+    {{/each}}
+  </ul>
+</div>
+
+</div>
+</div>

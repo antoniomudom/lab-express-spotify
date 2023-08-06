@@ -1,0 +1,13 @@
+<div>
+    <a href="/">Home</a>
+  <h3>Canciones</h3>
+  <ul>
+    {{#each tracks}}
+    <li>{{this.name}}</li>
+    <audio controls>
+      <source src="{{this.preview_url}}" type="audio/mpeg">
+      
+    </audio>
+    {{/each}}
+  </ul>
+</div>
